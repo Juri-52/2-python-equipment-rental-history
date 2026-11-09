@@ -1,0 +1,42 @@
+[
+  {
+    "equipment_id": "E001",
+    "name": "ノートPC A",
+    "borrower": null
+  },
+  {
+    "equipment_id": "E002",
+    "name": "ノートPC B",
+    "borrower": "佐藤"
+  },
+  {
+    "equipment_id": "E003",
+    "name": "デジタルカメラ",
+    "borrower": null
+  },
+  {
+    "equipment_id": "E004",
+    "name": "三脚",
+    "borrower": null
+  },
+  {
+    "equipment_id": "E005",
+    "name": "プロジェクター",
+    "borrower": "鈴木"
+  },
+  {
+    "equipment_id": "E006",
+    "name": "ワイヤレスマイク",
+    "borrower": null
+  },
+  {
+    "equipment_id": "E007",
+    "name": "タブレット",
+    "borrower": null
+  },
+  {
+    "equipment_id": "E008",
+    "name": "モバイルルーター",
+    "borrower": null
+  }
+]
