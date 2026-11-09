@@ -3,7 +3,7 @@ import json
 from equipment import Equipment
 
 
-def load_equipment(filename: str = "equipment.json") -> list[Equipment]:
+def load_equipment(filename: str = "data/equipment.json") -> list[Equipment]:
     with open(filename, encoding="utf-8") as file:
         rows = json.load(file)
 
