@@ -11,6 +11,8 @@ class Equipment:
         borrower = borrower.strip()
         if not borrower:
             raise ValueError("利用者名を入力してください")
+        if not self.is_available():
+            raise ValueError("この備品は貸出中です")
         self.borrower = borrower
 
     def checkin(self) -> None:
