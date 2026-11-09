@@ -14,3 +14,7 @@ class RentalService:
     def checkout(self, equipment_id: str, borrower: str) -> None:
         item = self.find_equipment(equipment_id)
         item.checkout(borrower)
+
+    def checkin(self, equipment_id: str) -> None:
+        item = self.find_equipment(equipment_id)
+        item.checkin()
