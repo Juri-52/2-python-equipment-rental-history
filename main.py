@@ -1,4 +1,4 @@
-from storage import load_equipment
+from storage import load_current_equipment
 
 
 def show_equipment(equipment):
@@ -11,7 +11,7 @@ def show_equipment(equipment):
 
 
 def main():
-    equipment = load_equipment()
+    equipment = load_current_equipment()
     show_equipment(equipment)
 
 
