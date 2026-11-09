@@ -18,3 +18,10 @@ class RentalService:
     def checkin(self, equipment_id: str) -> None:
         item = self.find_equipment(equipment_id)
         item.checkin()
+
+    def get_available(self) -> list[Equipment]:
+        available = []
+        for item in self.equipment:
+            if item.is_available():
+                available.append(item)
+        return available
