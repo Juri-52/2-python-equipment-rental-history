@@ -10,3 +10,7 @@ class RentalService:
             if item.equipment_id == equipment_id:
                 return item
         raise ValueError("指定した番号の備品が見つかりません")
+
+    def checkout(self, equipment_id: str, borrower: str) -> None:
+        item = self.find_equipment(equipment_id)
+        item.checkout(borrower)
