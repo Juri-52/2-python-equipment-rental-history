@@ -1,6 +1,8 @@
 # データの内容
 
-ルートにある `equipment.json` を読み込みます。データは備品のリストです。
+`data/equipment.json`を読み込みます。  
+`data/current_equipment.json`が存在する場合は、こちらを優先して読み込みます。  
+データは備品のリストです。
 
 | キー | 内容 |
 | --- | --- |
@@ -8,6 +10,6 @@
 | `name` | 備品名 |
 | `borrower` | 貸出先の名前。貸出できる備品は `null` |
 
-一覧の表示だけを行うため、プログラムからJSONを書き換える操作はありません。
+貸出・返却時に`data/current_equipment.json`を変更します。
 
 [READMEへ戻る](../README.md)
